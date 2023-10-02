@@ -39,11 +39,9 @@ console.log(checkboxes)
 for (var checkbox of checkboxes) {
     checkbox.addEventListener('click', function () {
         if (this.checked == true) {
-            console.log(this.value);
             showTeam(this.value)
         }
         else {
-            console.log(this.value)
             hideTeam(this.value)
         }
     });
