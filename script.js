@@ -39,15 +39,11 @@ var checkboxes = document.querySelectorAll('.checkbox');
 for (var checkbox of checkboxes) {
     checkbox.addEventListener('click', function () {
         if (this.checked == true) {
-            showTeam(this.value)
-            //to triger the name filter after restting the filteration
-            filterbyName()
-
+            showTeam(this.value);
+            filterbyName();
         }
         else {
-            hideTeam(this.value)
-            //to triger the name filter after restting the filteration
-            filterbyName()
+            hideTeam(this.value);
         }
     });
 }
