@@ -40,9 +40,14 @@ for (var checkbox of checkboxes) {
     checkbox.addEventListener('click', function () {
         if (this.checked == true) {
             showTeam(this.value)
+            //to triger the name filter after restting the filteration
+            filterbyName()
+
         }
         else {
             hideTeam(this.value)
+            //to triger the name filter after restting the filteration
+            filterbyName()
         }
     });
 }
