@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h2>F1 Leaderboard</h2>
+    <input type="text" id="searchBox" onkeyup="filterbyName()" placeholder="Search for Driver" title="Type in a driver.">
+
+
+    <select class="select_Nationality" onchange="filterByNationality()">
+        <option selected="" value="">All nationality</option>
+        <option value="NED">Netherland</option>
+        <option value="MEX">Mexico</option>
+        <option value="GBR">Great Britain</option>
+        <option value="ESP">Spain</option>
+        <option value="MON">Monaco</option>
+        <option value="AUS">Australia</option>
+        <option value="CAN">Canada</option>
+        <option value="FRA">France</option>
+        <option value="THA">Thailand</option>
+        <option value="GER">Germany</option>
+        <option value="FIN">Finland</option>
+        <option value="CHN">China</option>
+        <option value="JPN">Japan</option>
+        <option value="DEN">Denmark</option>
+        <option value="NZL">New Zealand</option>
+        <option value="USA">United States of America</option>
+        <option value="GBR">Great Britain</option>
+    </select>
+    <fieldset>
+        <legend>Filter by team</legend>
+        <div>
+          <input type="checkbox" id="RED BULL RACING HONDA RBPT" value="RED BULL RACING HONDA RBPT" class="checkbox" onclick="" checked/>
+          <label for="RED BULL RACING HONDA RBPT">RED BULL RACING HONDA RBPT</label>
+        </div>
+      
+        <div class="block">
+          <input type="checkbox" id="MERCEDES" value="MERCEDES" class="checkbox" onclick="" checked/>
+          <label for="MERCEDES">MERCEDES</label>
+        </div>
+        <div>
+            <input type="checkbox" id="ASTON MARTIN ARAMCO MERCEDES" value="ASTON MARTIN ARAMCO MERCEDES" class="checkbox" onclick="" checked/>
+            <label for="ASTON MARTIN ARAMCO MERCEDES">ASTON MARTIN ARAMCO MERCEDES</label>
+          </div>
+        
+          <div class="block">
+            <input type="checkbox" id="FERRARI" value="Ferrari" class="checkbox" onclick="" checked/>
+            <label for="Ferrari">Ferrari</label>
+          </div>
+          <div>
+            <input type="checkbox" id="ALPHATAURI HONDA" value="ALPHATAURI HONDA RBPT" class="checkbox" onclick="" checked/>
+            <label for="ALPHATAURI HONDA RBPT">ALPHATAURI HONDA RBPT</label>
+          </div>
+        
+          <div class="block">
+            <input type="checkbox" id="MCLAREN MERCEDES" value="MCLAREN MERCEDES" class="checkbox" onclick="" checked/>
+            <label for="MCLAREN MERCEDES">MCLAREN MERCEDES</label>
+          </div>
+        
+          <div class="block">
+            <input type="checkbox" id="AlPINE RENAULT" value="AlPINE RENAULT" class="checkbox" onclick="" checked/>
+            <label for="AlPINE RENAULT">AlPINE RENAULT</label>
+          </div>
+          <div>
+              <input type="checkbox" id="WILLIAMS MERCEDES" value="WILLIAMS MERCEDES" class="checkbox" onclick="" checked/>
+              <label for="WILLIAMS MERCEDES">WILLIAMS MERCEDES</label>
+            </div>
+          
+            <div class="block">
+              <input type="checkbox" id="HAAS FERRARI" value="HAAS FERRARI" class="checkbox" onclick="" checked/>
+              <label for="HAAS FERRARI">HAAS FERRARI</label>
+            </div>
+            <div>
+              <input type="checkbox" id="ALFA ROMEO FERRARI" value="ALFA ROMEO FERRARI" class="checkbox" name="ALFA ROMEO FERRARI" onclick="" checked/>
+              <label for="scales">ALFA ROMEO FERRARI</label>
+            </div>
+      </fieldset>
+      
+    <h3>F1 Leader board</h3>
+    <table class="F1Leaderboard">
+        <thead>
+            <tr>
+                <th>POS</th>
+                <th>Driver</th>
+                <th>Nationality</th>
+                <th>CAR</th>
+                <th>PTS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max Verstapen</td>
+                <td>NED</td>
+                <td>RED BULL RACING HONDA RBPT</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sergio Perez</td>
+                <td>MEX</td>
+                <td>RED BULL RACING HONDA RBPT</td>
+                <td>223</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lewis Hamilton</td>
+                <td>GBR</td>
+                <td>MERCEDES</td>
+                <td>190</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Fernando Alonso</td>
+                <td>ESP</td>
+                <td>ASTON MARTIN ARAMCO MERCEDES</td>
+                <td>174</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Carlos Sainz</td>
+                <td>ESP</td>
+                <td>Ferrari</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Charlez Leclerc</td>
+                <td>MON</td>
+                <td>Ferrari</td>
+                <td>135</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Lando Norris</td>
+                <td>GBR</td>
+                <td>MCLAREN MERCEDES</td>
+                <td>115</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>George Russel</td>
+                <td>GBR</td>
+                <td>MERCEDES</td>
+                <td>115</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Oscar Piastri</td>
+                <td>AUS</td>
+                <td>MCLAREN MERCEDES</td>
+                <td>57</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Lance Stroll</td>
+                <td>CAN</td>
+                <td>ASTON MARTIN ARAMCO MERCEDES</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Pierre Gasly</td>
+                <td>FRA</td>
+                <td>AlPINE RENAULT</td>
+                <td>46</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Esteban Ocon</td>
+                <td>FRA</td>
+                <td>AlPINE RENAULT</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Alexander Albon</td>
+                <td>THA</td>
+                <td>WILLIAMS MERCEDES</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Nico Hulkenberg</td>
+                <td>GER</td>
+                <td>HAAS FERRARI</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Valtteri Bottas</td>
+                <td>FIN</td>
+                <td>ALFA ROMEO FERRARI</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Zhou Guanyu</td>
+                <td>CHN</td>
+                <td>ALFA ROMEO FERRARI</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Yuki Tsunoda</td>
+                <td>JPN</td>
+                <td>ALPHATAURI HONDA RBPT</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Kevin Magnussen</td>
+                <td>DEN</td>
+                <td>HAAS FERRARI</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Liam Lawson</td>
+                <td>NZL</td>
+                <td>ALPHATAURI HONDA RBPT</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>WILLIAMS MERCEDES</td>
+                <td>USA</td>
+                <td>WILLIAMS MERCEDES</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Nyck De Vries</td>
+                <td>NED</td>
+                <td>ALPHATAURI HONDA RBPT</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Daniel Ricciardo</td>
+                <td>AUS</td>
+                <td>ALPHATAURI HONDA RBPT</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
