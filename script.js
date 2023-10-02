@@ -33,9 +33,9 @@ function doFilter(rows, column, word) {
     }
 }
 
-
+//select all the checkboxes
 var checkboxes = document.querySelectorAll('.checkbox');
-console.log(checkboxes)
+//listen on each check box
 for (var checkbox of checkboxes) {
     checkbox.addEventListener('click', function () {
         if (this.checked == true) {
