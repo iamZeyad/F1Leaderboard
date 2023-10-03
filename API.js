@@ -5,7 +5,7 @@ document.body.onload = () => {
 };
 
 async function F1Log() {
-    const response = await fetch("http://ergast.com/api/f1/current/last/driverStandings.json");
+    const response = await fetch("https://ergast.com/api/f1/current/last/driverStandings.json");
     const data = await response.json();
     return data.MRData.StandingsTable.StandingsLists[0];
 }
