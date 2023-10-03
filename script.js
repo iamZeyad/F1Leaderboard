@@ -1,7 +1,5 @@
 function filterbyName() {
     let input = document.getElementById("searchBox");
-    if (input.value.length == 0)
-    return;
     let word = input.value.toLowerCase();
     let tables = document.querySelectorAll(".F1Leaderboard");
     for (table of tables) {
